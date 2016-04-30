@@ -34,12 +34,19 @@ static NSString * const ACAppDelegatePayloadUserDefaultsKey = @"ACAppDelegatePay
     
     NSDictionary *dict = @{
                            @"aps" : @{
-                                   @"alert" : @"You got your emails.",
-                                   @"badge" : @9,
-                                   @"sound" : @"bingbong.aiff"
+                                   @"alert" : @"Message",
+                                   @"badge" : @0,
+                                   @"content-available" : @1,
+                                   @"sound" : @"default"
                                    },
-                           @"acme1" : @"bar",
-                           @"acme2" : @42
+                           @"mh"  : @{
+                                   @"created_at" : @"2016-04-29T20:32:34.250-05:500",
+                                   @"menu_icon"  : @"<null>",
+                                   @"parameters" : @{
+                                           @"url" : @"https://www.google.com"
+                                           },
+                                   @"type" : @"internal_link"
+                                   }
                            };
     
     NSError *error;
